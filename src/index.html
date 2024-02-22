@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="scss/main.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/bc5c290b4f.js" crossorigin="anonymous"></script>
+  <title>What A Book Home Page</title>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid align-items-end ">
+      <a class="navbar-brand align-self-end pt-4" href="index.html"><img src="images/logo3.png" alt="What-A-Book Logo"
+          width="300"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse " id="navbarScroll">
+        <form class="d-flex mb-0">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Search by Author or ISBN" aria-label="Author or ISBN"
+              aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <span class="input-group-text" id="basic-addon2"><a href="search-by-id.html"><i class="bi bi-search"></i></a></span>
+            </div>
+          </div>
+        </form>
+        <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100%;">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarGenresDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Book Genres
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarGenresDropdown">
+              <li><a class="dropdown-item" href="#">Action and Adventure</a></li>
+              <li><a class="dropdown-item" href="#">Childrens</a></li>
+              <li><a class="dropdown-item" href="#">Classic</a></li>
+              <li><a class="dropdown-item" href="#">Health and Wellness</a></li>
+              <li><a class="dropdown-item" href="#">Historical</a></li>
+              <li><a class="dropdown-item" href="#">Romance</a></li>
+              <li><a class="dropdown-item" href="#">Science Fiction</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarAccountDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Account
+              <i class="bi bi-person-fill"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarAccountDropdown">
+              <li><a class="dropdown-item" href="login.html">My Profile</a></li>
+              <li><a class="dropdown-item" href="wish-list.html">My Wishlist</a></li>
+              <li><a class="dropdown-item" href="#">Orders</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Shopping Cart
+              <i class="bi bi-cart-fill"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Section -->
+  <main class=" bg-light">
+    <div class="row m-auto">
+      <!-- LEFT -->
+      <article class="col-md-5 col-sm-12 p-lg-5 p-md-3 p-xs-0">
+        <div class="search-form">
+          <h1>Your next reading adventure is just a click away!</h1>
+          <form class="form-group">
+            <label for="exampleFormControlInput1">Author</label>
+            <input type="text" class="form-control" placeholder="Search by Author" aria-label="Author or ISBN">
+
+              <label for="exampleFormControlInput1">Genre</label>
+              <input type="text" class="form-control" placeholder="Search by Genre" aria-label="Title">
+
+            <label for="exampleFormControlInput1">Title</label>
+            <input type="text" class="form-control" placeholder="Search by Title" aria-label="Title">
+
+            <label for="exampleFormControlInput1">ISBN</label>
+            <input type="text" class="form-control" placeholder="Search by ISBN" aria-label="ISBN">
+
+            <a href="search-list.html" class="btn search-form-btn">Search</a>
+            
+        </div>
+      </article>
+
+      <!-- RIGHT -->
+      <div class="col-md-7 col-sm-12 d-flex align-items-center img-col">
+        <div class="promotion d-flex align-items-center justify-content-center">
+          <div class="decorative-line">
+            <h2 class="pt-4 px-4"><span>25%</span> Off Sale</h2>
+            <p class="pb-4 px-4">On all ebooks in your
+              <a href="#wishlist.html">wishlist</a> this week only! Use coupon code <span>LOYAL</span> at checkout!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ABOUT -->
+  <section class="about container">
+    <h2>Welcome to What-A-Book, where your next reading adventure is just a click away!</h2>
+    <p> Dive into our extensive
+      collection of ebooks, from the latest bestsellers to beloved classics, all available for instant download.
+      Create your own wishlist to keep track of books you're eager to explore and enjoy seamless access across all your
+      devices. With What-A-Book, finding and enjoying your favorite books has never been easier or more convenient.
+      Start your literary journey today!
+    </p>
+  </section>
+
+  <!-- BEST LIST -->
+  <section class="book-list">
+    <h2>Check out our customers favorite reads!</h2>
+    <div class="cards d-flex flex-wrap justify-content-evenly  m-auto py-5">
+
+      <div class="card">
+        <a href="#"><img src="images/TaleofTwoCities.jpg" alt="..."></a>
+        <div class="card-body">
+          <h5 class="card-title">A Tale of Two Cities</h5>
+          <p class="card-text">By Charles Dickens</p>
+          <p class="price">$9.99</p>
+          <a href="#" class="btn">Add to cart</a>
+          <a href="wish-list.html" class="btn btn-wish">Add to wishlistt</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="#"><img src="images/littlePrince.jpg" alt="..."></a>
+        <div class="card-body">
+          <h5 class="card-title">The Little Prince</h5>
+          <p class="card-text">By Antoine de Saint-Exupéry</p>
+          <p class="price">$9.99</p>
+          <a href="#" class="btn">Add to cart</a>
+          <a href="wish-list.html" class="btn btn-wish">Add to wishlist</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="#"><img src="images/thenThereWhereNone.jpg" alt="..."></a>
+        <div class="card-body">
+          <h5 class="card-title">And Then There Were None</h5>
+          <p class="card-text">By Agatha Christie</p>
+          <p class="price">$9.99</p>
+          <a href="#" class="btn">Add to cart</a>
+          <a href="wish-list.html" class="btn btn-wish">Add to wishlist</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="#"><img src="images/theAlchemist.jpg" alt="..."></a>
+        <div class="card-body">
+          <h5 class="card-title">The Alchemist</h5>
+          <p class="card-text">By Paulo Coelho</p>
+          <p class="price">$9.99</p>
+          <a href="#" class="btn">Add to cart</a>
+          <a href="wish-list.html" class="btn btn-wish">Add to wishlist</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="#"><img src="images/theHobbit.jpg" alt="..."></a>
+        <div class="card-body">
+          <h5 class="card-title">The Hobbit</h5>
+          <p class="card-text">By J.R.R. Tolkien</p>
+          <p class="price">$9.99</p>
+          <a href="#" class="btn">Add to cart</a>
+          <a href="wish-list.html" class="btn btn-wish">Add to wishlist</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-row">
+      <div class="footer-col">
+        <address>
+          <p>
+            What-A-Book<br>
+            4885 University Drive<br>
+            Chicago,IL<br>
+            60610
+          </p>
+          <a href="#">whatabook@example.com</a>
+        </address>
+      </div>
+
+      <div class="footer-col">
+        <p><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Learn Flexbox</a></p>
+        <p><a href="https://css-tricks.com/snippets/css/complete-guide-grid/">Learn CSS Grids</a></p>
+      </div>
+    </div>
+    <div class="social">
+      <a href="https://github.com/"><i class="fab fa-github-square"></i></a>
+      <a href="https://linkedin.com/"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p class="copyright">&copySoloSphere Designs</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

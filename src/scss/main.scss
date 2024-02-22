@@ -1,0 +1,331 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+/* 
+* ==========================================================================
+* Global
+* ==========================================================================
+*/
+body {
+  color: rgb(51, 51, 51);
+
+  p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+  }
+
+  label {
+    font-weight: bold;
+  }
+}
+
+/* 
+* ==========================================================================
+* Navigation 
+* ==========================================================================
+*/
+nav {
+  border-bottom: 1px solid lightgray;
+
+  .input-group-text {
+    background-color: rgb(77, 75, 75);
+    border: 1px solid rgb(77, 75, 75);
+
+    i {
+      color: #fff;
+    }
+  }
+}
+
+
+/* 
+* ==========================================================================
+* Home page 
+* ==========================================================================
+*/
+main {
+
+  background-color: rgb(248, 249, 250);
+  // background-image: url("../images/Home.jpg");
+  // background-size: cover;
+  // background-position: center;
+
+  a {
+    color: rgb(248, 249, 250);
+  }
+
+  .row {
+    max-width: 1800px;
+
+    article {
+      color: rgb(248, 249, 250);
+      
+      .search-form {
+        padding: 2rem 3rem;
+        background-color: rgb(28, 111, 115);
+        border-radius: 10px;
+
+        h1 {
+          padding-top: 1rem;
+          font-family: "Be Vietnam Pro", sans-serif;
+          font-weight: 600;
+          line-height: 1.4;
+          font-size: 1.75rem;
+          text-transform: uppercase;
+        }
+
+        label {
+          padding-top: 1rem;
+        }
+
+        .search-form-btn {
+          margin: 1.5rem 0;
+          padding: .5rem 2rem;
+          color: #fff;
+          border-color: #fff;
+        }
+
+        .search-form-btn:hover {
+          background-color: rgb(28, 111, 115, .9);
+        }
+      }
+    }
+
+    .img-col {
+      background-image: url("../images/Home.jpg");
+      background-size: cover;
+      background-position: center;
+      color: rgb(248, 249, 250);
+    }
+
+    .promotion {
+      margin: 0 auto;
+      background: rgba(0, 0, 0, 0.8);
+      width: 70%;
+
+      span {
+        color: rgb(242, 124, 110);
+      }
+
+      .decorative-line {
+        margin: 2rem;
+        padding: 3rem;
+        border: 2px solid #fff;
+
+        h2 {
+          font-family: "Oleo Script", system-ui;
+          font-size: 2.75rem;
+          line-height: 0.2;
+        }
+
+        p {
+          font-size: 1.5rem;
+          line-height: 1.3;
+        }
+      }
+    }
+  }
+}
+
+/* 
+* ==========================================================================
+* sections
+* ==========================================================================
+*/
+.about {
+  padding: 7rem 5rem 5rem 5rem;
+  text-align: center;
+
+}
+
+/* 
+* ==========================================================================
+* book-list
+* ==========================================================================
+*/
+.book-list {
+  padding-top: 4rem;
+  text-align: center;
+  background-color: rgb(248, 249, 250);
+
+  .cards {
+    max-width: 1800px;
+  }
+
+  .card {
+    width: 14rem;
+
+    img {
+      height: 18rem;
+    }
+
+    .card-body {
+      border: none;
+
+      p {
+        font-size: 1rem;
+      }
+
+      .btn {
+        margin: .25rem;
+        width: 100%;
+        padding: .25rem 2.25rem;
+        background-color: rgb(242, 124, 110);
+        color: #fff;
+        border: none;
+      }
+
+      .btn-wish {
+        padding: .25rem 2.25rem;
+        background-color: #fff;
+        border: 1px solid rgb(242, 124, 110);
+        color: rgb(242, 124, 110);
+      }
+    }
+
+  }
+}
+
+/* 
+* ==========================================================================
+* Login 
+* ==========================================================================
+*/
+.login {
+  background-color: rgb(186, 208, 209);
+
+  .login-form {
+    padding: 3rem 3rem 5rem 3rem;
+    background-color: #fff;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+
+    .btn {
+      background-color: rgb(242, 124, 110);
+      color: #fff;
+    }
+
+    a {
+      color: rgb(28, 111, 115);
+    }
+  }
+}
+
+/* 
+* ==========================================================================
+* Cart
+* ==========================================================================
+*/
+.cart {
+  background: rgb(186, 208, 209);
+  .container {
+    padding: 2rem; 
+    .btn-checkout {
+      background-color: rgb(242, 124, 110);
+      color: #fff;
+    }
+    .btn-checkout:hover {
+      background-color: rgb(255, 162, 151);
+    }
+  }
+}
+
+/* 
+* ==========================================================================
+* Footer and footer navigation 
+* ==========================================================================
+*/
+footer {
+  padding: 2rem 2rem 1rem 2rem;
+  background: #000;
+  color: rgb(246, 243, 237);
+
+}
+
+.footer-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.footer-row a,
+.footer-row p {
+  color: rgb(246, 243, 237);
+  font-style: normal;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+
+.footer-col:nth-child(2) {
+  text-align: right;
+}
+
+.social {
+  text-align: center;
+}
+
+.social>a>i {
+  padding: 0.5rem;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.copyright {
+  text-align: center;
+}
+
+
+/* 
+* ==========================================================================
+* Media Queries
+* ==========================================================================
+*/
+
+@media (max-width: 1190px) {
+  main .row .promotion {
+    width: 90%;
+  } 
+}
+@media (max-width: 940px) {
+  main .row .promotion .decorative-line{
+    margin:1rem;
+    padding: 1rem;
+  } 
+}
+@media (max-width: 768px) {
+  h2 {
+    padding: 0 .1rem;
+  }
+  
+  main .row article {
+    padding: 0;
+  }
+  main .row article .search-form {
+    border-radius: 0;
+  }
+  main .row .promotion {
+    width: 100%;
+  }
+  main .row .promotion .decorative-line {
+    margin: 1rem;
+    padding: 0;
+  }
+
+  .card {
+    margin-top: 1rem;
+  }
+  .cart .container {
+    padding-bottom: 2rem;;
+    p {
+      padding: 1rem;
+    }
+  }
+}
+
