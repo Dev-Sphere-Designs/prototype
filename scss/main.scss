@@ -51,9 +51,6 @@ nav {
 main {
 
   background-color: rgb(248, 249, 250);
-  // background-image: url("../images/Home.jpg");
-  // background-size: cover;
-  // background-position: center;
 
   a {
     color: rgb(248, 249, 250);
@@ -64,7 +61,7 @@ main {
 
     article {
       color: rgb(248, 249, 250);
-      
+
       .search-form {
         padding: 2rem 3rem;
         background-color: rgb(28, 111, 115);
@@ -155,11 +152,10 @@ main {
 
   .cards {
     max-width: 1800px;
+    align-items: stretch;
   }
 
   .card {
-    width: 14rem;
-
     img {
       height: 18rem;
     }
@@ -223,12 +219,15 @@ main {
 */
 .cart {
   background: rgb(186, 208, 209);
+
   .container {
-    padding: 2rem; 
+    padding: 2rem;
+
     .btn-checkout {
       background-color: rgb(242, 124, 110);
       color: #fff;
     }
+
     .btn-checkout:hover {
       background-color: rgb(255, 162, 151);
     }
@@ -291,28 +290,33 @@ footer {
 @media (max-width: 1190px) {
   main .row .promotion {
     width: 90%;
-  } 
+  }
 }
+
 @media (max-width: 940px) {
-  main .row .promotion .decorative-line{
-    margin:1rem;
+  main .row .promotion .decorative-line {
+    margin: 1rem;
     padding: 1rem;
-  } 
+  }
 }
+
 @media (max-width: 768px) {
   h2 {
     padding: 0 .1rem;
   }
-  
+
   main .row article {
     padding: 0;
   }
+
   main .row article .search-form {
     border-radius: 0;
   }
+
   main .row .promotion {
     width: 100%;
   }
+
   main .row .promotion .decorative-line {
     margin: 1rem;
     padding: 0;
@@ -321,11 +325,13 @@ footer {
   .card {
     margin-top: 1rem;
   }
+
   .cart .container {
-    padding-bottom: 2rem;;
+    padding-bottom: 2rem;
+    ;
+
     p {
       padding: 1rem;
     }
   }
 }
-
